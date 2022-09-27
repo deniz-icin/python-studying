@@ -1,9 +1,14 @@
 URL = "https://meet.google.com/yig-qocf-xmc?pli=1"
 
+nakedURL = URL
 
-x = URL.replace("https://","")
+if nakedURL.startswith("https://"):
+    nakedURL = nakedURL.replace("https://","")
 
-y = x.split("/")
+if nakedURL.startswith("http://"):
+    nakedURL = nakedURL.replace("http://","")
+
+y = nakedURL.split("/")
 
 print(y[0])
 
