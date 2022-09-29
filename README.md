@@ -1,26 +1,28 @@
 # pythonStudying
 
-## Ana başlık
+## Header
 
-# sa
+### Another Header
 
 as
 
-1. domates
-2. biber
-3. patlıcan
+1. item1
+2. item2
+3. item3
 
--
--
--
+- w/dot
+- w/dot
+- w/dot
 
-`a = 5`
+`a = 5, "Write as a code"`
+
+---
 
 ```
 b = 5
 c = 6
 
-print(b+c)
+print(b+c) "Code block"
 ```
 
 ---
