@@ -1,10 +1,13 @@
-def harf():
-    harfDegeri = input("harf salla random:")
-    harfDegeri = sorted(harfDegeri)
-    tumHarfler =""
-    for i in harfDegeri:
-        if not i in tumHarfler:
-         tumHarfler += i
-         print("{} --> {} kez geçiyor!".format(i, harfDegeri.count(i)))
-    
-harf()
+
+from pprint import pprint
+
+siklik = {}
+girdi = input("bir metin giriniz:")
+
+for character in sorted(girdi):
+    if character in siklik.keys():
+        siklik[character] += 1
+    else:
+        siklik[character] = 1
+
+pprint(siklik)
