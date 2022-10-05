@@ -15,13 +15,13 @@ for i in range(len(scoreList)):
         new_score.append(scoreList[i])
 
 runnerUpScore = min(new_score)
-runnerUps = []
+runnerUp = []
 
 for i in range(len(name_score)):
     if name_score[i][1] == runnerUpScore:
-        runnerUps.append(name_score[i][0])
+        runnerUp.append(name_score[i][0])
 
-runnerUps.sort()
+runnerUp.sort()
 
-for i in range(len(runnerUps)):
-    print(runnerUps[i])
+for i in range(len(runnerUp)):
+    print(runnerUp[i])
