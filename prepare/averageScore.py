@@ -11,7 +11,7 @@ if __name__ == '__main__':
 new_marks = []    
 
 for i in range(len(student_marks)):
-    if query_name == student_marks[name]:
+    if query_name == student_marks[i][0]:
         new_marks.append(scores)
         
 a = 0
@@ -21,5 +21,3 @@ for _ in new_marks:
     a+=sum(_)
     
 print(a/b)
-
-##duzelt
