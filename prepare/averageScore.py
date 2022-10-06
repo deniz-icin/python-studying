@@ -6,18 +6,12 @@ if __name__ == '__main__':
         name, *line = input().split()
         scores = list(map(float, line))
         student_marks[name] = scores
+
     query_name = input()
-    
-new_marks = []    
+    queryName_score = student_marks[query_name]
 
-for i in range(len(student_marks)):
-    if query_name == student_marks[i][0]:
-        new_marks.append(scores)
-        
-a = 0
-b = len(student_marks)
-
-for _ in new_marks:
-    a+=sum(_)
+    a = sum(queryName_score)
+    b = len(queryName_score)
+    result = a/b
     
-print(a/b)
+    print("%.2f" % result)
