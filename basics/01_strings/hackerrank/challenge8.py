@@ -1,4 +1,5 @@
 
+
 n = int(input())
 phone_book = {}
 
@@ -8,10 +9,9 @@ for _ in range(n):
 
 d = phone_book    
 
-
-for _ in d:
+for _ in range(len(d)):
     query = input()
-    if _ != query:
+    if query not in phone_book:
         print("Not found")
     else:
-        print(query + "=" + phone)
+        print(query + "=" + [phone])
