@@ -9,9 +9,16 @@ for _ in range(n):
 
 d = phone_book    
 
-for _ in range(len(d)):
+
+def main():
     query = input()
-    if query not in phone_book:
+    if query not in d:
         print("Not found")
     else:
-        print(query + "=" + [phone])
+        output = f'{query} = {phone_book[query]}'
+        print(output)
+
+
+
+for _ in range(n):
+   main()
