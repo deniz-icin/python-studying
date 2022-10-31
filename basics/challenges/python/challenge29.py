@@ -6,18 +6,12 @@ import sys
 
 
 def bitwiseAnd(N, K):
-    all_results = []
-    max_possible = []
+    max_result = 0
     for i in range(1,N):
-        for ii in range(2,N+1):
-            if ii > i:
-                result = i & ii
-                all_results.append(result)
-    for _ in all_results:
-        if _ < K:
-            max_possible.append(_)
-            result = max(max_possible)
-    return result
+        for ii in range(i+1,N+1):
+            if max_result < i&ii <K:
+                max_result = i&ii
+    return max_result
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
