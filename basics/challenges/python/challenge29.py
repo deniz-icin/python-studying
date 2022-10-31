@@ -3,15 +3,11 @@ import os
 import random
 import re
 import sys
-
+from itertools import combinations as comb
 
 def bitwiseAnd(N, K):
-    max_result = 0
-    for i in range(1,N):
-        for ii in range(i+1,N+1):
-            if max_result < i&ii <K:
-                max_result = i&ii
-    return max_result
+    answer = max(a&b for a, b in comb(range(K-2, N+1), 2) if a&b < K)
+    return answer
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
