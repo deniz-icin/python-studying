@@ -1,8 +1,7 @@
 def get_rounds(number):
     return [number,number+1,number+2]
 def concatenate_rounds(rounds_1, rounds_2):
-    a = rounds_1 +rounds_2
-    return list(a)
+    return rounds_1 +rounds_2
 def list_contains_round(rounds, number):
     return number in rounds
 def card_average(hand):
